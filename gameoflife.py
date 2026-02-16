@@ -76,11 +76,13 @@ def step():
 validinput = False
 while not validinput:
     try:
-        y = int(input("Enter the length of the grid: ").strip())
+        y = int(input("\nEnter the length of the grid: ").strip())
         x = int(input("Enter the width of the grid: ").strip())
         validinput = True
+    except KeyboardInterrupt:
+        quit()
     except:
-        print("invalid input, try again\n")
+        print("\ninvalid input, try again")
 
 gameArray = createGrid(y,x)
 
@@ -93,7 +95,7 @@ while True:
     value = input("\nPress enter to advance a step or type q to quit: ").strip()
     if value == "":
         gameArray = step()
-    elif value == "q" or "Q":
+    elif value in ("q", "Q"):
         break
     else:
         print(f"Unknown input {value}. Accepted values are: <blank>, 'q', or 'Q'")
