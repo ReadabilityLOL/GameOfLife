@@ -98,4 +98,4 @@ while True:
     elif value in ("q", "Q"):
         break
     else:
-        print(f"Unknown input {value}. Accepted values are: <blank>, 'q', or 'Q'")
+        print(f"Unknown input: '{value}'. Accepted values are: <blank>, 'q', or 'Q'")
