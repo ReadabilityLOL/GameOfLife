@@ -73,6 +73,8 @@ def step():
 #        print(numNeighbors(x,y), end="")
 #    print()
 
+print("\nWelcome to Conway's game of life!")
+
 validinput = False
 while not validinput:
     try:
@@ -88,7 +90,6 @@ gameArray = createGrid(y,x)
 
 populate()
 
-print("\nWelcome to Conway's game of life!")
 while True:
     print()
     prettyprint()
