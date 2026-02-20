@@ -1,5 +1,11 @@
+html, body{
+  height:100%
+  margin:0;
+}
+
 .row{
   display:flex;
+  flex: 1 1 0;
   flex-direction: row;
   min-height: 0;
 }
@@ -7,10 +13,16 @@
 .cell{
     border: 1px solid #d3d3d3;
     flex: 1 1 0;
-    height: 100%;
+    height:100%;
     aspect-ratio: 1 / 1;
     min-width: 0;
     min-height: 0;
+}
+
+.gamegrid{
+  display:flex
+  flex-direction: column;
+  height:100vh;
 }
 
 .alive{
@@ -21,4 +33,9 @@
     background-color:white;
 }
 
+
+button{
+    margin-top: 10px;
+    font-size: 2ch;
+}
 
